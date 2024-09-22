@@ -1,6 +1,6 @@
 # PrivateInternetAccess-WiFi-disable-on-boot
 
-This script automates the process of connecting to a VPN (specifically Private Internet Access) before enabling WiFi on Windows startup. It ensures that your internet connection is always protected by your VPN.
+This script automates the process of connecting to a VPN (specifically Private Internet Access) before enabling WiFi or Ethernet on Windows startup. It ensures that your internet connection is always protected by your VPN.
 
 ## Features
 
