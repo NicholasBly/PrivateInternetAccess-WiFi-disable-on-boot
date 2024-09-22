@@ -19,14 +19,14 @@ This script automates the process of connecting to a VPN (specifically Private I
 
 ## Installation
 
-1. Clone this repository or download the `vpn_wifi_manager.bat` file.
-2. Place the `vpn_wifi_manager.bat` file in a permanent location on your computer.
+1. Clone this repository or download the `PIA_Startup.bat` file.
+2. Place the `PIA_Startup.bat` file in a permanent location on your computer.
 
 ## Configuration
 
 Before using the script, you need to configure it for your system:
 
-1. Open `vpn_wifi_manager.bat` in a text editor.
+1. Open `PIA_Startup.bat` in a text editor.
 2. Locate the following line and adjust the path if necessary:
    ```batch
    start "" "C:\Program Files\Private Internet Access\piactl.exe" connect
@@ -41,7 +41,7 @@ Before using the script, you need to configure it for your system:
 
 ### Manual Execution
 
-You can run the script manually by double-clicking the `vpn_wifi_manager.bat` file.
+You can run the script manually by double-clicking the `PIA_Startup.bat` file.
 
 ### Automatic Execution on Startup
 
@@ -49,7 +49,7 @@ To have the script run automatically when you start your computer:
 
 1. Press `Win + R`, type `shell:startup`, and press Enter.
 2. This opens the Startup folder.
-3. Create a shortcut to `vpn_wifi_manager.bat` in this folder.
+3. Create a shortcut to `PIA_Startup.bat` in this folder.
 
 Alternatively, you can use Task Scheduler for more advanced startup options:
 
@@ -58,7 +58,7 @@ Alternatively, you can use Task Scheduler for more advanced startup options:
 3. Name it "VPN WiFi Manager" and click Next.
 4. Choose "When the computer starts" and click Next.
 5. Select "Start a program" and click Next.
-6. Browse and select your `vpn_wifi_manager.bat` file, then click Next.
+6. Browse and select your `PIA_Startup.bat` file, then click Next.
 7. Review the settings and click Finish.
 
 ## Troubleshooting
