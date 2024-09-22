@@ -37,6 +37,35 @@ Before using the script, you need to configure it for your system:
    ```
    These should match the position and color of the PIA connection indicator on your screen.
 
+### Ethernet Connection Configuration
+
+If you're using an Ethernet connection instead of WiFi, you need to modify the script:
+
+1. Open `PIA_Startup.bat` in a text editor.
+2. Find these lines:
+   ```batch
+   :: Disable Wi-Fi
+   netsh interface set interface "Wi-Fi" admin=disabled
+   ```
+   and
+   ```batch
+   :: Enable Wi-Fi
+   netsh interface set interface "Wi-Fi" admin=enabled
+   ```
+3. Replace "Wi-Fi" with "Ethernet" in both places. The lines should now look like this:
+   ```batch
+   :: Disable Ethernet
+   netsh interface set interface "Ethernet" admin=disabled
+   ```
+   and
+   ```batch
+   :: Enable Ethernet
+   netsh interface set interface "Ethernet" admin=enabled
+   ```
+4. Save the file after making these changes.
+
+Note: If your Ethernet interface has a different name, you can find it by opening Command Prompt and running `netsh interface show interface`. Use the exact name shown for your Ethernet connection in the script.
+
 ## Usage
 
 ### Manual Execution
@@ -65,7 +94,8 @@ Alternatively, you can use Task Scheduler for more advanced startup options:
 
 - If the script isn't detecting the VPN connection, try adjusting the screen coordinates and color in the script.
 - Ensure that the path to the PIA executable is correct.
-- If WiFi isn't being disabled or enabled, make sure you're running the script with administrator privileges.
+- If WiFi or Ethernet isn't being disabled or enabled, make sure you're running the script with administrator privileges.
+- For Ethernet users: If the script isn't working, verify that you've correctly identified and used your Ethernet interface name in the script.
 
 ## Contributing
 
